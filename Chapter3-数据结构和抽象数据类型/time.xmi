@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI verified="false" xmi.version="1.2" timestamp="2018-08-18T11:26:19" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>umbrello uml modeller http://uml.sf.net</XMI.exporter>
+   <XMI.exporterVersion>1.6.1</XMI.exporterVersion>
+   <XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+  </XMI.documentation>
+  <XMI.metamodel xmi.version="1.3" href="UML.xml" xmi.name="UML"/>
+ </XMI.header>
+ <XMI.content>
+  <UML:Model isSpecification="false" isAbstract="false" isLeaf="false" xmi.id="m1" isRoot="false" name="UML 模型">
+   <UML:Namespace.ownedElement>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="folder" name="folder"/>
+    <UML:Stereotype visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="datatype" name="datatype"/>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Logical View" name="Logical View">
+     <UML:Namespace.ownedElement>
+      <UML:Package stereotype="folder" visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Datatypes" name="Datatypes">
+       <UML:Namespace.ownedElement>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="WR5RCwhuPu2p" name="int"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="svH3GJWbJQwG" name="char"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="tTAYqXaMygl8" name="bool"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="aT3yL5lB02EE" name="float"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Mkpd8lu0E2Y2" name="double"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Z6OVmAeLbhHw" name="short"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="k27i2LwO4k2C" name="long"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="TuCiwkiUp7zb" name="unsigned int"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="FbuqG9k0BrgE" name="unsigned short"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="AbaELaPoUbUR" name="unsigned long"/>
+        <UML:DataType stereotype="datatype" visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="KDt9KsiXUbLk" name="string"/>
+       </UML:Namespace.ownedElement>
+      </UML:Package>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="k5juwN84ygHH" name="Time">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Hg6lFaAXl3g3" comment="将时间设置一个给定的值&#xa;&#xa;接受：&#x9;Time对象t&#xa;&#x9;hours，以标准时间衡量的小时数&#xa;&#x9;mintues，以标准时间衡量的分钟数&#xa;&#x9;AMPM，（'A' if AM,'P' if PM)&#xa;回传：&#x9;将数据成员设置为给定值后的Time t" name="set">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="uNaMwv4g0nYu" type="k5juwN84ygHH" value="" name="&amp;t"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="9ez5LGNcuTL9" type="TuCiwkiUp7zb" value="" name="hours"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="1WhnXLqRgPnc" type="TuCiwkiUp7zb" value="" name="mintues"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="KsHJdpDkSAqn" type="svH3GJWbJQwG" value="" name="AMPM"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ODNIeiQfC5Sk" comment="使用输出流out显示标准或军用格式时间&#xa;&#xa;接受：&#x9;Time t和ostream out&#xa;输出：&#x9;将t输出到out&#xa;回传：&#x9;将t的表示插入到ostream，返回修改后的ostream out" name="display">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="QH95gvfynwHO" type="k5juwN84ygHH" value="" name="&amp;t"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="2iRFnsxC96Hn" type="kV7Cdxx2AKIo" value="" name="&amp;out"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="1wlmr39ZWGj9" comment="将时间前进到一个给定的值&#xa;&#xa;接受：&#x9;Time对象t&#xa;&#x9;hours，要增加的小时数&#xa;&#x9;mintues，要增加的分钟数&#xa;回传：&#x9;数据成员被增加了给定值后的Time t" name="advance">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="Dg9L0S728YFu" type="k5juwN84ygHH" value="" name="&amp;t"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="QC4XHLKIF634" type="TuCiwkiUp7zb" value="" name="hours"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="7CbdSKmd0uy0" type="TuCiwkiUp7zb" value="" name="mintues"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="K53SbGM0TOXk" comment="判断一个时间是否小于另一个时间&#xa;&#xa;接受：&#x9;Time t1，Time t2&#xa;返回：&#x9;如果t1&lt;t2返回true，否则返回false" name="lessThan">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="aL781VT6DIQF" type="tTAYqXaMygl8"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="VFPjm9FVoOTN" type="NODcxrGsGWmW" value="" name="&amp;t1"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="lf90aCrmZiNL" type="NODcxrGsGWmW" value="" name="&amp;t2"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Wue7Xee2t1ld" comment="将标准时间转换为军用格式时间" name="toMilitary">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="rFU6DuspvhHy" type="WR5RCwhuPu2p"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="A16xNaKwtR4u" type="TuCiwkiUp7zb" value="" name="hours"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="wXz8oPLKH0Po" type="TuCiwkiUp7zb" value="" name="mintues"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="c1pT2Y5DZB8v" type="svH3GJWbJQwG" value="" name="AMPM"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="jSrcttVoOSwC" comment="将军用时间转换为标准格式时间" name="toStandard">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="GM9nVHiFhXpa" type="TuCiwkiUp7zb" value="" name="military"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="dJdqpRV41xHl" type="TuCiwkiUp7zb" value="" name="&amp;hours"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="MYXFDoBRAKFd" type="TuCiwkiUp7zb" value="" name="&amp;mintues"/>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="ZvsGRipp09aj" type="svH3GJWbJQwG" value="" name="&amp;AMPM"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="kV7Cdxx2AKIo" name="ostream"/>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="NODcxrGsGWmW" name="const Time"/>
+     </UML:Namespace.ownedElement>
+     <XMI.extension xmi.extender="umbrello">
+      <diagrams>
+       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="类图" font="Sans Serif,10,-1,5,50,0,0,0,0,0" canvasheight="181" canvaswidth="633" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="K0wNzTZugNO2" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+        <widgets>
+         <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" showoperations="1" textcolor="#000000" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="-273" showattsigs="601" showstereotype="1" y="-125" showattributes="1" font="Sans Serif,10,-1,5,75,0,0,0,0,0" width="628" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="k5juwN84ygHH" showscope="1" height="135" showopsigs="601"/>
+        </widgets>
+        <messages/>
+        <associations/>
+       </diagram>
+      </diagrams>
+     </XMI.extension>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Use Case View" name="Use Case View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Component View" name="Component View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Deployment View" name="Deployment View">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+    <UML:Model stereotype="folder" visibility="public" isSpecification="false" namespace="m1" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="Entity Relationship Model" name="Entity Relationship Model">
+     <UML:Namespace.ownedElement/>
+    </UML:Model>
+   </UML:Namespace.ownedElement>
+  </UML:Model>
+ </XMI.content>
+ <XMI.extensions xmi.extender="umbrello">
+  <docsettings viewid="K0wNzTZugNO2" uniqueid="dJdqpRV41xHl" documentation=""/>
+  <listview>
+   <listitem open="1" type="800" id="Views">
+    <listitem open="1" type="827" id="Deployment View"/>
+    <listitem open="1" type="801" id="Logical View">
+     <listitem open="1" type="813" id="NODcxrGsGWmW"/>
+     <listitem open="1" type="813" id="kV7Cdxx2AKIo"/>
+     <listitem open="1" type="813" id="k5juwN84ygHH">
+      <listitem open="0" type="815" id="1wlmr39ZWGj9"/>
+      <listitem open="0" type="815" id="ODNIeiQfC5Sk"/>
+      <listitem open="0" type="815" id="K53SbGM0TOXk"/>
+      <listitem open="0" type="815" id="Hg6lFaAXl3g3"/>
+      <listitem open="0" type="815" id="Wue7Xee2t1ld"/>
+      <listitem open="0" type="815" id="jSrcttVoOSwC"/>
+     </listitem>
+     <listitem open="0" type="807" id="K0wNzTZugNO2" label="类图"/>
+     <listitem open="0" type="830" id="Datatypes">
+      <listitem open="1" type="829" id="tTAYqXaMygl8"/>
+      <listitem open="1" type="829" id="svH3GJWbJQwG"/>
+      <listitem open="1" type="829" id="Mkpd8lu0E2Y2"/>
+      <listitem open="1" type="829" id="aT3yL5lB02EE"/>
+      <listitem open="1" type="829" id="WR5RCwhuPu2p"/>
+      <listitem open="1" type="829" id="k27i2LwO4k2C"/>
+      <listitem open="1" type="829" id="Z6OVmAeLbhHw"/>
+      <listitem open="1" type="829" id="KDt9KsiXUbLk"/>
+      <listitem open="1" type="829" id="TuCiwkiUp7zb"/>
+      <listitem open="1" type="829" id="AbaELaPoUbUR"/>
+      <listitem open="1" type="829" id="FbuqG9k0BrgE"/>
+     </listitem>
+    </listitem>
+    <listitem open="1" type="836" id="Entity Relationship Model"/>
+    <listitem open="1" type="802" id="Use Case View"/>
+    <listitem open="1" type="821" id="Component View"/>
+   </listitem>
+  </listview>
+  <codegeneration>
+   <codegenerator language="C++"/>
+  </codegeneration>
+ </XMI.extensions>
+</XMI>

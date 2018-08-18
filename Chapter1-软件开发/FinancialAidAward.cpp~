@@ -1,0 +1,77 @@
+#include "FinancialAidAward.h"
+
+// Constructors/Destructors
+//  
+
+FinancialAidAward::FinancialAidAward ( ) {
+initAttributes();
+}
+
+FinancialAidAward::~FinancialAidAward ( ) { }
+
+//  
+// Methods
+//  
+
+
+// Accessor methods
+//  
+
+
+// Other methods
+//  
+
+
+/**
+ * 获得奖学金数额
+ * @return float
+ */
+float FinancialAidAward::getAmount ( )
+{
+  return this->amount;
+}
+
+
+/**
+ * 获得奖学金来源
+ * @return string
+ */
+string FinancialAidAward::getSource ( )
+{
+  return this->source;
+}
+
+
+/**
+ * 显示奖学金信息
+ */
+void FinancialAidAward::display ( )
+{
+  cout<<"奖项："<<this->source<<",数额："<<this->amount<<endl;
+}
+
+
+/**
+ * 设置奖学金数额
+ * @param  A
+ */
+void FinancialAidAward::setAmount (float A )
+{
+  this->amount = A;
+}
+
+
+/**
+ * 设置奖学金名称
+ * @param  S 奖学金来源
+ */
+void FinancialAidAward::setSource (string S )
+{
+  strcpy(this->source,S);
+}
+
+void FinancialAidAward::initAttributes ( ) {
+  amount = 0;
+  source = NULL;
+}
+

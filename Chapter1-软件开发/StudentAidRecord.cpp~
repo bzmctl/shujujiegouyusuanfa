@@ -1,0 +1,112 @@
+#include "StudentAidRecord.h"
+
+// Constructors/Destructors
+//  
+
+StudentAidRecord::StudentAidRecord ( ) {
+initAttributes();
+}
+
+StudentAidRecord::~StudentAidRecord ( ) { }
+
+//  
+// Methods
+//  
+
+
+// Accessor methods
+//  
+
+
+// Other methods
+//  
+
+
+/**
+ * @return int
+ */
+int StudentAidRecord::getId ( )
+{
+}
+
+
+/**
+ * @return std::string
+ */
+std::string StudentAidRecord::getName ( )
+{
+}
+
+
+/**
+ * @return int
+ */
+int StudentAidRecord::getNumAwards ( )
+{
+}
+
+
+/**
+ * @return FinancialAidAward
+ * @param  i 奖项编号
+ */
+FinancialAidAward StudentAidRecord::getFinancialAid (int i )
+{
+}
+
+
+/**
+ * @param  i 奖学金编号
+ * @param  F 奖学金名称
+ */
+void StudentAidRecord::setFinancialAid (int i, std::string F )
+{
+}
+
+
+/**
+ * @param  N 学生名称
+ */
+void StudentAidRecord::setName (std::string N )
+{
+}
+
+
+/**
+ * @param  I 奖学金数量
+ */
+void StudentAidRecord::setNumAwards (int I )
+{
+}
+
+
+/**
+ */
+void StudentAidRecord::display ( )
+{
+}
+
+
+/**
+ * @param  i 奖学金项数
+ * @param  F 财政补助奖金
+ */
+void StudentAidRecord::setFinanciaAid (int i, FinancialAidAward F )
+{
+}
+
+
+/**
+ * @param  id
+ * @param  name
+ * @param  numAwards
+ * @param  finAid
+ */
+ StudentAidRecord::StudentAidRecord (int id, std::string name, int numAwards, FinancialAidAward[] finAid )
+{
+}
+
+void StudentAidRecord::initAttributes ( ) {
+  id = 0;
+}
+
