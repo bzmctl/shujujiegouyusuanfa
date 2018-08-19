@@ -1,3 +1,0 @@
-OBJECTS = 2-1.exe
-
-include ../GNU_makefile_template
