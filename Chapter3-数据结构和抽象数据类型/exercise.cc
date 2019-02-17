@@ -250,7 +250,7 @@ void sPrimeNumber(int f[],int n)
 	    cout<<"\n";
 	}
     }
-  cout<<"sushu number:"<<count<<endl;
+  cout<<"素数 number:"<<count<<endl;
 }
 void res()
 {
